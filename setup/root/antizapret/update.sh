@@ -41,13 +41,13 @@ cleanup_download_staging() {
 }
 trap cleanup_download_staging EXIT
 
-UPDATE_LINK=https://raw.githubusercontent.com/Nessusd/AntiZapret-VPN-ipv6/main/setup/root/antizapret/update.sh
+UPDATE_LINK=https://raw.githubusercontent.com/Scorg/AntiZapret-VPN-ipv6/main/setup/root/antizapret/update.sh
 UPDATE_PATH=update.sh
 
-PARSE_LINK=https://raw.githubusercontent.com/Nessusd/AntiZapret-VPN-ipv6/main/setup/root/antizapret/parse.sh
+PARSE_LINK=https://raw.githubusercontent.com/Scorg/AntiZapret-VPN-ipv6/main/setup/root/antizapret/parse.sh
 PARSE_PATH=parse.sh
 
-DOALL_LINK=https://raw.githubusercontent.com/Nessusd/AntiZapret-VPN-ipv6/main/setup/root/antizapret/doall.sh
+DOALL_LINK=https://raw.githubusercontent.com/Scorg/AntiZapret-VPN-ipv6/main/setup/root/antizapret/doall.sh
 DOALL_PATH=doall.sh
 
 DOMAIN_LINK=https://raw.githubusercontent.com/bol-van/rulist/refs/heads/main/reestr_hostname.txt
