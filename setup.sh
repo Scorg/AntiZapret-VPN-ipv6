@@ -3899,7 +3899,7 @@ sysctl -w net.ipv4.conf.all.route_localnet=1 >/dev/null
 sysctl -w net.ipv4.conf.default.route_localnet=1 >/dev/null
 
 # Удаляем переопределённые параметры ядра.
-sed -i '/^$/!{/^#/!d}' /etc/sysctl.conf
+[[ -f /etc/sysctl.conf ]] && sed -i '/^$/!{/^#/!d}' /etc/sysctl.conf
 
 # Принудительная загрузка модуля nf_conntrack.
 echo 'nf_conntrack' > /etc/modules-load.d/nf_conntrack.conf
