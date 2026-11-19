@@ -139,7 +139,7 @@ fi
 sysctl -p "$IPV6_SYSCTL" || true
 
 # Удаляем переопределённые параметры ядра
-sed -i '/^$/!{/^#/!d}' /etc/sysctl.conf
+[[ -f /etc/sysctl.conf ]] && sed -i '/^$/!{/^#/!d}' /etc/sysctl.conf
 
 # Принудительная загрузка модуля nf_conntrack
 echo 'nf_conntrack' > /etc/modules-load.d/nf_conntrack.conf
